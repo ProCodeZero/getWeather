@@ -1,0 +1,73 @@
+body {
+	margin: 0;
+  background-image: url("/pictures/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-size: 24px;
+  color: black;
+  font-weight: bold;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.getweather__wrapper {
+	height: 70%;
+  text-align: center;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 3rem;
+  justify-items: center;
+  align-items: end;
+}
+
+.form__input,
+.form__btn {
+  background-color: rgb(19, 165, 0, 0.6);
+  font-size: 2.5rem;
+  border-radius: 15px;
+  padding: 15px 25px;
+  border: none;
+  transition: all 0.2s linear;
+}
+
+.form__input {
+  color: #ffe921;
+}
+.form__input::placeholder,
+.form__btn {
+  color: #ffe921;
+}
+.form__btn {
+  cursor: pointer;
+}
+.form__btn:hover,
+.form__input:hover,
+.form__input:active {
+  background-color: #ffe921;
+  color: rgb(19, 165, 0, 0.7);
+  transition: all 0.2s linear;
+}
+
+input:hover::-webkit-input-placeholder {
+  color: rgb(19, 165, 0, 0.7);
+  transition: all 0.2s linear;
+}
+.weather-card {
+  background: rgb(32, 233, 0);
+  background: linear-gradient(
+    0deg,
+    rgba(32, 233, 0, 0.6) 0%,
+    rgba(255, 248, 0, 0.6) 100%
+  );
+  border-radius: 25px;
+  width: 250px;
+}
+.weather-card > * {
+  margin: 15px 0px;
+}
+
+.card__emoji {
+  font-size: 3rem;
+}
